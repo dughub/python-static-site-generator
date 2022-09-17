@@ -29,7 +29,7 @@ class Parser:
             file_path = Path.cwd() / "ssg" / "{}.py".format(filename)
 
         grammar = parso.load_grammar()
-        module = grammar.parse(path=file_path.resolve())
+        module = grammar.parse(,
         self.success = len(grammar.iter_errors(module)) == 0
 
         if self.success:
