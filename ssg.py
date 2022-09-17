@@ -3,7 +3,7 @@ from ssg.site import Site
 import ssg.parsers
 
 
-def main(source="content", dest="dist"):
+def main(source: str = "content", dest: str = "dist") -> None:
     config = {
         "source": source,
         "dest": dest,
